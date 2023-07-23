@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.half-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.half-page img {
+  max-width: 100%;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+.half-page .text-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-family: "Lucida Handwriting";
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+.half-page:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.half-page:hover img {
+  filter: grayscale(0%);
+}
